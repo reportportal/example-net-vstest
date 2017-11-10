@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleMsTests", "ExampleMsTests\ExampleMsTests.csproj", "{C5CFDB19-826E-489F-8F2A-8B8C3FDA57A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsTests", "MsTests\MsTests.csproj", "{5F0FD232-B8AC-4D32-AD94-BC57978D3732}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C5CFDB19-826E-489F-8F2A-8B8C3FDA57A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C5CFDB19-826E-489F-8F2A-8B8C3FDA57A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C5CFDB19-826E-489F-8F2A-8B8C3FDA57A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C5CFDB19-826E-489F-8F2A-8B8C3FDA57A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F0FD232-B8AC-4D32-AD94-BC57978D3732}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F0FD232-B8AC-4D32-AD94-BC57978D3732}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F0FD232-B8AC-4D32-AD94-BC57978D3732}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F0FD232-B8AC-4D32-AD94-BC57978D3732}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
