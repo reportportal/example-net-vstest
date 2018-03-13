@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using ReportPortal.Shared;
 using System;
 
 namespace ExampleUnitTests
@@ -9,6 +10,7 @@ namespace ExampleUnitTests
         [TestMethod]
         public void TestMethod1()
         {
+            Bridge.LogMessage(ReportPortal.Client.Models.LogLevel.Info, "Message from logger");
             Console.WriteLine("Console output from UnitTest2 - TestMetod1");
         }
 
