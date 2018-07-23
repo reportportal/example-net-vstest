@@ -25,7 +25,7 @@ namespace ExampleUnitTests
         {
             get
             {
-                for (int i = 0; i < 1000; i++)
+                for (int i = 0; i < 10; i++)
                 {
                     yield return new TestCaseData(i);
                 }
