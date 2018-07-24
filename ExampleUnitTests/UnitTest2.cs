@@ -18,14 +18,15 @@ namespace ExampleUnitTests
         [Test, TestCaseSource(typeof(UnitTest2), "TestCases")]
         public void NUnitTestMethod2(int p)
         {
-            System.Threading.Thread.Sleep(1000);
+            Console.WriteLine("Income parameter is " + p);
+            System.Threading.Thread.Sleep(100);
         }
 
         public static IEnumerable TestCases
         {
             get
             {
-                for (int i = 0; i < 10; i++)
+                for (int i = 0; i < 100; i++)
                 {
                     yield return new TestCaseData(i);
                 }
