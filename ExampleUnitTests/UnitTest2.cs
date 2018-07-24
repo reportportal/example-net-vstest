@@ -18,7 +18,7 @@ namespace ExampleUnitTests
         [Test, TestCaseSource(typeof(UnitTest2), "TestCases")]
         public void NUnitTestMethod2(int p)
         {
-            
+            System.Threading.Thread.Sleep(1000);
         }
 
         public static IEnumerable TestCases
