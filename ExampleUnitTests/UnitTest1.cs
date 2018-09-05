@@ -19,5 +19,13 @@ namespace ExampleUnitTests
         {
             Console.WriteLine("Console output from UnitTest2 - TestMetod2");
         }
+
+        public TestContext TestContext { get; set; }
+
+        [TestMethod]
+        public void TestMethod3()
+        {
+            TestContext.AddResultFile("cat.png");
+        }
     }
 }
