@@ -1,0 +1,7 @@
+﻿
+image: Visual Studio 2017
+
+build_script:
+  - cmd: dotnet test -l:ReportPortal
+
+test: off
