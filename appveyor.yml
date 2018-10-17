@@ -1,5 +1,5 @@
 ﻿build_script:
   - cmd: dotnet build
 
-test:
+test_script:
   - cmd: dotnet vstest ExampleUnitTests\bin\Debug\net461\ExampleUnitTests.dll --logger:ReportPortal
