@@ -25,7 +25,8 @@ namespace ExampleUnitTests
         [TestMethod]
         public void TestMethod3()
         {
-            TestContext.AddResultFile("cat.png");
+            // TODO: AddResultFile is not available in netcoreapp target framework
+            //TestContext.AddResultFile("cat.png");
         }
     }
 }
