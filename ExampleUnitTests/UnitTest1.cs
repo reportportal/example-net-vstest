@@ -31,6 +31,8 @@ namespace ExampleUnitTests
         [TestMethod]
         public void TestMethod3()
         {
+            Bridge.LogMessage(ReportPortal.Client.Models.LogLevel.Info, "Wow this is cat! {rp#file#cat.png}");
+
             TestContext.WriteLine("this is trace message via TestContext.WriteLine");
             TestContext.WriteLine("this is 2nd trace message via TestContext.WriteLine");
             // TODO: AddResultFile is not available in netcoreapp target framework
