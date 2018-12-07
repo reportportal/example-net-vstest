@@ -2,12 +2,14 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ReportPortal.Shared;
 using System;
 
-namespace ExampleUnitTests
+namespace ExampleUnitTests.MsTests
 {
     [TestClass]
     public class UnitTest1
     {
         [TestMethod]
+        [Description("This is description of TestMethod1")]
+        [TestCategory("Category1"), TestCategory("Category2")]
         public void TestMethod1()
         {
             Bridge.LogMessage(ReportPortal.Client.Models.LogLevel.Info, "Message from logger");
