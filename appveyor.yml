@@ -1,7 +1,5 @@
 ﻿build_script:
-  - cmd: dotnet publish -f net461
-  - cmd: dotnet publish -f netcoreapp21
+  - cmd: dotnet build
 
 test_script:
-  - cmd: dotnet vstest ExampleUnitTests/bin/Debug/net461/publish/ExampleUnitTests.dll --logger:ReportPortal
-  - cmd: dotnet vstest ExampleUnitTests/bin/Debug/netcoreapp21/publish/ExampleUnitTests.dll --logger:ReportPortal
+  - cmd: dotnet test -l:ReportPortal & exit 0
