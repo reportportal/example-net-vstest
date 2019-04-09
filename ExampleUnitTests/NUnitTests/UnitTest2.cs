@@ -15,7 +15,7 @@ namespace ExampleUnitTests.NUnitTests
         }
 
         [Test, TestCaseSource(typeof(UnitTest2), "TestCases")]
-        public void NUnitTestMethod2(int p)
+        public void NUnitTestMethod2(string p)
         {
             Console.WriteLine("Income parameter is " + p);
             System.Threading.Thread.Sleep(1000);
@@ -27,7 +27,7 @@ namespace ExampleUnitTests.NUnitTests
             {
                 for (int i = 0; i < 10; i++)
                 {
-                    yield return new TestCaseData(i);
+                    yield return new TestCaseData(i.ToString() + ".postfixpart");
                 }
             }
         }
