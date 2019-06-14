@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RunSettings>
+  <RunConfiguration>
+    <TestAdaptersPaths>.</TestAdaptersPaths>
+  </RunConfiguration>>
+  <LoggerRunSettings>
+    <Loggers>
+      <Logger friendlyName="ReportPortal">
+        <Configuration>
+          <Launch.Description>Ran from Visual Studio Test Explorer</Launch.Description>
+        </Configuration>
+      </Logger>
+    </Loggers>
+  </LoggerRunSettings>
+</RunSettings>
