@@ -40,5 +40,11 @@ namespace ExampleUnitTests.MsTests
             // TODO: AddResultFile is not available in netcoreapp target framework
             //TestContext.AddResultFile("cat.png");
         }
+
+        [TestMethod]
+        public void FailedMethod4()
+        {
+            Assert.IsTrue(false);
+        }
     }
 }
