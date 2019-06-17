@@ -1,6 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ReportPortal.Shared;
 using System;
+using System.Threading.Tasks;
 
 namespace ExampleUnitTests.MsTests
 {
@@ -42,8 +43,15 @@ namespace ExampleUnitTests.MsTests
         }
 
         [TestMethod]
-        public void FailedMethod4()
+        public async Task FailedMethod4()
         {
+            for (int i = 0; i < 5; i++)
+            {
+                await Task.Delay(1000);
+                Console.WriteLine("Console output");
+                Bridge.LogMessage(ReportPortal.Client.Models.LogLevel.Debug, "Logger output");
+            }
+
             Assert.IsTrue(false);
         }
     }
