@@ -12,5 +12,11 @@ namespace ExampleUnitTests.XUnitTests
         {
             
         }
+
+        [Fact(DisplayName = "OverriddenTest2")]
+        public void Test2()
+        {
+
+        }
     }
 }
