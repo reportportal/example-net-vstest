@@ -18,5 +18,14 @@ namespace ExampleUnitTests.XUnitTests
         {
 
         }
+
+        [Theory]
+        [InlineData("a")]
+        [InlineData(".withdot")]
+        [InlineData("with.dot")]
+        public void Test3(string a)
+        {
+
+        }
     }
 }
