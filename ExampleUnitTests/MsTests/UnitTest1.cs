@@ -38,8 +38,8 @@ namespace ExampleUnitTests.MsTests
 
             TestContext.WriteLine("this is trace message via TestContext.WriteLine");
             TestContext.WriteLine("this is 2nd trace message via TestContext.WriteLine");
-            // TODO: AddResultFile is not available in netcoreapp target framework
-            //TestContext.AddResultFile("cat.png");
+            
+            TestContext.AddResultFile("cat.png");
         }
 
         [TestMethod]
