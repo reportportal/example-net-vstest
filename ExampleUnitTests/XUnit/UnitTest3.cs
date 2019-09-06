@@ -7,10 +7,10 @@ namespace ExampleUnitTests.XUnitTests
 {
     public class UnitTest3
     {
-        [Fact]
+        [Fact, Trait("Category", "Category1"), Trait("Category", "Category2")]
         public void Test1()
         {
-            
+
         }
 
         [Fact(DisplayName = "OverriddenTest2")]
