@@ -10,7 +10,7 @@ namespace ExampleUnitTests.NUnitTests
         [Test, Description("This is NUnit description"), Category("Category1")]
         public void NUnitTestMethod1()
         {
-            Bridge.LogMessage(ReportPortal.Client.Models.LogLevel.Info, "Message from logger");
+            Log.Info("Message from logger");
             Console.WriteLine("Console output from UnitTest2 - TestMetod1");
         }
 

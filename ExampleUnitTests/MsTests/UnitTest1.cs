@@ -13,9 +13,9 @@ namespace ExampleUnitTests.MsTests
         [TestCategory("Category1"), TestCategory("Category2")]
         public void TestMethod1()
         {
-            Bridge.LogMessage(ReportPortal.Client.Models.LogLevel.Info, "Message from logger");
-            Bridge.LogMessage(ReportPortal.Client.Models.LogLevel.Debug, "Debug Message from logger");
-            Bridge.LogMessage(ReportPortal.Client.Models.LogLevel.Error, "Error Message from logger");
+            Log.Info("Message from logger");
+            Log.Debug("Debug Message from logger");
+            Log.Error("Error Message from logger");
             Console.WriteLine("Console1 output from UnitTest2 - TestMetod1");
             Console.WriteLine("Console2 output from UnitTest2 - TestMetod1");
             Console.WriteLine("Console3 output from UnitTest2 - TestMetod1");
@@ -34,7 +34,7 @@ namespace ExampleUnitTests.MsTests
         [TestMethod]
         public void TestMethod3()
         {
-            Bridge.LogMessage(ReportPortal.Client.Models.LogLevel.Info, "Wow this is cat! {rp#file#cat.png}");
+            Log.Info("Wow this is cat! {rp#file#cat.png}");
 
             TestContext.WriteLine("this is trace message via TestContext.WriteLine");
             TestContext.WriteLine("this is 2nd trace message via TestContext.WriteLine");
@@ -49,10 +49,18 @@ namespace ExampleUnitTests.MsTests
             {
                 await Task.Delay(1000);
                 Console.WriteLine("Console output");
-                Bridge.LogMessage(ReportPortal.Client.Models.LogLevel.Debug, "Logger output");
+                Log.Debug("Logger output");
             }
 
             Assert.IsTrue(false);
+        }
+
+        [DataTestMethod]
+        [DataRow("sample.1")]
+        [DataRow("sample.2")]
+        public void Test5(string input)
+        {
+            Log.Info(input);
         }
     }
 }
