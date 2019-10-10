@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace ExampleUnitTests.MsTests
 {
     [TestClass]
-    public class UnitTest1
+    public class MsTestClass1
     {
         [TestMethod]
         [Description("This is description of TestMethod1")]
