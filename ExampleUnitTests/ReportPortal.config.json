@@ -1,13 +1,13 @@
 ﻿{
   "$schema": "https://raw.githubusercontent.com/reportportal/agent-net-vstest/master/ReportPortal.VSTest.TestLogger/ReportPortal.config.schema",
   "enabled": true,
-  "server": {
-    "url": "https://rp.epam.com/api/v1/",
-    "project": "default_project",
-    "authentication": {
-      "uuid": "ba7eb7c8-7b33-42f6-8cf0-e9cd26e717f4"
-    }
-  },
+	"server": {
+		"url": "https://web.demo.reportportal.io/api/v1/",
+		"project": "default_personal",
+		"authentication": {
+			"uuid": "2771ea3b-fec4-4bfc-a472-de46ff398edc"
+		}
+	},
   "launch": {
     "name": "VS Test Demo Launch",
     "description": "this is description",
