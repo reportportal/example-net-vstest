@@ -2,7 +2,7 @@
 <RunSettings>
   <RunConfiguration>
     <TestAdaptersPaths>.</TestAdaptersPaths>
-  </RunConfiguration>>
+  </RunConfiguration>
   <LoggerRunSettings>
     <Loggers>
       <Logger friendlyName="ReportPortal">
