@@ -1,18 +1,18 @@
 ﻿{
   "$schema": "https://raw.githubusercontent.com/reportportal/agent-net-vstest/master/ReportPortal.VSTest.TestLogger/ReportPortal.config.schema",
   "enabled": true,
-	"server": {
-		"url": "https://web.demo.reportportal.io/api/v1/",
-		"project": "default_personal",
+  "server": {
+    "url": "https://web.demo.reportportal.io/api/v1/",
+    "project": "default_personal",
     "authentication": {
-      "uuid": "19194c49-dad1-4ce0-9def-682caecbbabb"
+      "uuid": "d8467664-4ac8-465d-93ad-b60fba39d2c4"
     }
-	},
+  },
   "launch": {
     "name": "VS Test Demo Launch",
     "description": "this is description",
     "debugMode": true,
-    "tags": [ "t1", "t2" ]
+    "attributes": [ "t1", "os:win10" ]
   },
   "rootNamespaces": [ "ExampleUnitTests" ]
 }
