@@ -16,6 +16,12 @@ namespace ExampleUnitTests.MsTests
             Log.Info("Message from logger");
             Log.Debug("Debug Message from logger");
             Log.Error("Error Message from logger");
+
+            using (var scope = Log.BeginNewScope("qwe"))
+            {
+
+            }
+
             Console.WriteLine("Console1 output from UnitTest2 - TestMetod1");
             Console.WriteLine("Console2 output from UnitTest2 - TestMetod1");
             Console.WriteLine("Console3 output from UnitTest2 - TestMetod1");
@@ -38,7 +44,7 @@ namespace ExampleUnitTests.MsTests
 
             TestContext.WriteLine("this is trace message via TestContext.WriteLine");
             TestContext.WriteLine("this is 2nd trace message via TestContext.WriteLine");
-            
+
             TestContext.AddResultFile("cat.png");
         }
 
@@ -60,7 +66,17 @@ namespace ExampleUnitTests.MsTests
         [DataRow("sample.2")]
         public void Test5(string input)
         {
-            Log.Info(input);
+            using (var scope = Log.BeginNewScope("a"))
+            {
+                Log.Info(input);
+                Log.Info("Level 1");
+
+                using (var scope2 = Log.BeginNewScope("b"))
+                {
+                    Log.Info("Level 2");
+                }
+            }
+
         }
     }
 }
