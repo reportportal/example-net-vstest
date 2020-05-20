@@ -17,7 +17,7 @@ namespace ExampleUnitTests.MsTests
             Log.Debug("Debug Message from logger");
             Log.Error("Error Message from logger");
 
-            using (var scope = Log.BeginNewScope("qwe"))
+            using (var scope = Log.BeginScope("qwe"))
             {
 
             }
@@ -66,12 +66,12 @@ namespace ExampleUnitTests.MsTests
         [DataRow("sample.2")]
         public void Test5(string input)
         {
-            using (var scope = Log.BeginNewScope("a"))
+            using (var scope = Log.BeginScope("a"))
             {
                 Log.Info(input);
                 Log.Info("Level 1");
 
-                using (var scope2 = Log.BeginNewScope("b"))
+                using (var scope2 = Log.BeginScope("b"))
                 {
                     Log.Info("Level 2");
                 }
