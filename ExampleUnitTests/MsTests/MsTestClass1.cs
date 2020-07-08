@@ -19,7 +19,7 @@ namespace ExampleUnitTests.MsTests
 
             using (var scope = Log.BeginScope("qwe"))
             {
-
+                scope.Info("inner message");
             }
 
             Console.WriteLine("Console1 output from UnitTest2 - TestMetod1");
