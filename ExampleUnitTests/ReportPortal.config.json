@@ -2,10 +2,10 @@
   "$schema": "https://raw.githubusercontent.com/reportportal/agent-net-vstest/master/ReportPortal.VSTest.TestLogger/ReportPortal.config.schema",
   "enabled": true,
   "server": {
-    "url": "https://web.demo.reportportal.io/api/v1/",
+    "url": "https://demo.reportportal.io/api/v1/",
     "project": "default_personal",
     "authentication": {
-      "uuid": "42d66650-2184-47b7-8317-f92581b8f624"
+      "uuid": "d2f0dd38-04e0-44bb-ba9a-2b0b351394c9"
     }
   },
   "launch": {
