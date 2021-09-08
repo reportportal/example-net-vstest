@@ -11,7 +11,7 @@
   "launch": {
     "name": "VS Test Demo Launch",
     "description": "this is description",
-    "debugMode": true,
+    "debugMode": false,
     "attributes": [ "t1", "os:win10" ]
   },
   "rootNamespaces": [ "ExampleUnitTests" ]
